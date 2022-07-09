@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catalyst</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="index.html">Catalyst</a></div>
+            <ul class="menu">
+               
+                <li><a href="#influencer" class="menu-btn">Influencer</a></li>
+                <li><a href="BrandsandAgencies" class="menu-btn">Brands & Agencies</a></li>
+                <li><a href="Login" class="menu-btn">Login</a></li>
+                
+                <li><a href="#contact" class="menu-btn">Contact Us</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+     <!-- home section start -->
+          <section class="home" id="home">
+            <div id='login-form'class='login-page'>
+                 <div class="form-box">
+                    <div class='button-box'>
+                        <div id='btn'></div>
+                        <button type='button'onclick='login()'class='toggle-btn'>Brand</button>
+                        <button type='button'onclick='register()'class='toggle-btn'>Creator</button>
+                    </div>
+                    <form id='login' class='input-group-login'>
+                        <input type='text'class='input-field'placeholder='Email Id' required >
+                 <input type='password'class='input-field'placeholder='Enter Password' required>
+                 <input type='checkbox'class='check-box'><span>Remember Password</span>
+                  <button type='submit'class='submit-btn'>Log in</button>
+                 </form>
+             <form id='register' class='input-group-register'>
+                <input type='text'class='input-field'placeholder='Email Id' required >
+                <input type='password'class='input-field'placeholder='Enter Password' required>
+                <input type='checkbox'class='check-box'><span>Remember Password</span>
+                 
+                        <button type='submit'class='submit-btn'>Login</button>
+                 </form>
+                </div>
+                
+            </div>
+        
+        
+            </div>
+        
+     <div class="col">
+        <img src="top_big_image_2.png" width="1100" height="900">
+     </div>
+      
+
+
+
+
+        <script>
+            var x=document.getElementById('login');
+            var y=document.getElementById('register');
+            var z=document.getElementById('btn');
+            function register()
+            {
+                x.style.left='-400px';
+                y.style.left='50px';
+                z.style.left='150px';
+            }
+            function login()
+            {
+                x.style.left='50px';
+                y.style.left='500px';
+                z.style.left='0px';
+            }
+        </script>
+        <script>
+            var modal = document.getElementById('login-form');
+            window.onclick = function(event) 
+            {
+                if (event.target == modal) 
+                {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+    </section>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
